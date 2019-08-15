@@ -4,7 +4,7 @@ import { obtenerRobots } from "./arreglos";
 //describe() agrupa pruebas
 //it()  es una prueba en particular
 
-describe ('Pruebas de arreglos', ()=> {
+xdescribe ('Pruebas de arreglos', ()=> {
 
     it ( 'debe retornar al menos 3 robots', ()=>{
         expect( obtenerRobots().length ).toBeGreaterThanOrEqual(3);
