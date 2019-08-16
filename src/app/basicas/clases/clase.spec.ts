@@ -9,16 +9,16 @@ describe ('Pruebas de clases', ()=> {
     let player = new Jugador();
 
     beforeAll( ()=> { 
-        console.log ('beforeAll');
+        // console.log ('beforeAll');
     });
     beforeEach( ()=> { 
         player = new Jugador();
     });
     afterEach( ()=> { 
-        console.log ('afterEach');
+        // console.log ('afterEach');
     });
     afterAll( ()=> { 
-        console.log ('afterAll');
+        // console.log ('afterAll');
     });
 
 

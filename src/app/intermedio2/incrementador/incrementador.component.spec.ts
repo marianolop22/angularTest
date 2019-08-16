@@ -27,7 +27,7 @@ describe('Incremendator Component', () => {
         expect ( elem.innerHTML ).toContain ( 'Progreso de carga' );
     });
 
-    it('Debe mostrar en el input el valor del progreso', () => {
+    it('Debe mostrar en el input el valor del progreso', (done) => {
 
         component.cambiarValor (5);
         fixture.detectChanges();
@@ -35,6 +35,7 @@ describe('Incremendator Component', () => {
         fixture.whenStable().then ( ()=> {
             const input:HTMLInputElement = fixture.debugElement.query (By.css('input') ).nativeElement;//by sirve para buscar css, directivas, id, etc
             expect( input.value ).toBe( '55' );
+            done(); //este done va porque la funcion es asincrona
         });
     });
     
